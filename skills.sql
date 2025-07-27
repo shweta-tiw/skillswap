@@ -1,0 +1,11 @@
+
+CREATE DATABASE IF NOT EXISTS skillswap;
+USE skillswap;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    have_skill VARCHAR(100) NOT NULL,
+    want_skill VARCHAR(100) NOT NULL
+);
